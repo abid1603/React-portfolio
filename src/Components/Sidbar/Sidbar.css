@@ -1,0 +1,42 @@
+.rounded-circle{
+    width: 200px;
+    height: 200px;
+    border: 5px solid #74ebd5;
+}
+.text-center{
+    font-weight: 650;
+    font-size: 25px;
+    color: indigo;
+}
+.background{
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    font-size: 20px;
+    border-radius: 10px;
+    font-weight: 500;
+    color: indigo;
+}
+.background2{
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    font-size: 20px;
+    border-radius: 10px;
+}
+.link{
+    text-decoration: none;
+    cursor: pointer;
+    color: #4b0082;
+    font-weight: 500;
+}
+.socialicon{
+    height: 50px;
+    width: 50px;
+}
+.contect{
+    background-color: #74ebd5;
+    font-size: 18px;
+    font-weight: 500;
+   border-radius: 10px;
+}
+.emailbtn{
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    color: #4b0082;
+}

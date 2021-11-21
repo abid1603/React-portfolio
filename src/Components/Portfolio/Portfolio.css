@@ -1,0 +1,9 @@
+.sidebar{
+ height: 90vh;
+}
+.mainbar{
+    height: 90vh;
+}
+.container{
+    max-width: xl;
+}
