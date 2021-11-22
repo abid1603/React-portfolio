@@ -1,6 +1,7 @@
 import React from 'react';
 import Mainbar from '../Mainbar/Mainbar';
 import Sidbar from '../Sidbar/Sidbar';
+
 import './Portfolio.css';
 
 const Portfolio = () => {

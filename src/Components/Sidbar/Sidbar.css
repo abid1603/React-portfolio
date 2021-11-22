@@ -35,8 +35,14 @@
     font-size: 18px;
     font-weight: 500;
    border-radius: 10px;
+   word-wrap: break-word;
 }
 .emailbtn{
     background: linear-gradient(to right, #74ebd5, #acb6e5);
     color: #4b0082;
+    font-size: 22px;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    padding-bottom: 2px;
 }

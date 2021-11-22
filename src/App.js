@@ -1,12 +1,16 @@
 
 import './App.css';
 import Portfolio from './Components/Portfolio/Portfolio';
+import {
+  BrowserRouter as Router
+} from "react-router-dom";
+
 
 function App() {
   return (
-    <div>
-     <Portfolio></Portfolio>
-    </div>
+    <Router>
+      <Portfolio></Portfolio>
+    </Router>
   );
 }
 

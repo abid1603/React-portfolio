@@ -1,0 +1,20 @@
+.navbar_active{
+    font-size: 28px;
+    font-weight: 700;
+    color: indigo;
+    border-bottom: 5px solid #74ebd5;
+}
+.links{
+    text-decoration: none;
+}
+.navbar_item{
+    text-decoration: none;
+    color: indigo;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    
+}
+.navbar_item:hover{
+   color: #74ebd5;
+}

@@ -6,9 +6,12 @@ import { faDownload,faMapMarkerAlt,faEnvelope,faMobileAlt } from '@fortawesome/f
 import facebook from '../Icons/facebook.svg';
 import github from '../Icons/github.svg';
 import linkdin from '../Icons/linkedin.svg';
-import {Button} from 'react-bootstrap';
+import CV from '../CV/nobel.png';
 
 const Sidbar = () => {
+    const handelEmailMe = () =>{
+        Window.open("mailto:abidkhan1603@gmail.com");
+    }
     return (
         <div className="sidbar p-4">
             <div className="row">
@@ -24,13 +27,13 @@ const Sidbar = () => {
             </div>
             <div className="row">
                 <div className="col-12 background my-2 py-1 text-center">
-                    <span>Web Devloper</span>
+                    <span>Web Developer</span>
                 </div>
             </div>
 
             <div className="row">
                 <div className="col-12 background2 my-2 py-1 text-center">
-                    <a href="#"className='link'>
+                    <a href={CV} download='CV.png' className='link'>
                       <FontAwesomeIcon icon={faDownload} /><span className='mx-2'>Download Resume</span>
                     </a>
                 </div>
@@ -49,7 +52,7 @@ const Sidbar = () => {
                         <FontAwesomeIcon icon={faMapMarkerAlt}></FontAwesomeIcon> <span>Dhaka,Bangladesh</span>
                         </div>
                         <div className="contect-info py-2">
-                        <FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon><span>Abidkhan1603@gmail.com</span>
+                        <FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon> <span>Abidkhan1603@gmail.com</span>
                         </div>
                         <div className="contect-info py-2">
                         <FontAwesomeIcon icon={faMobileAlt}></FontAwesomeIcon> <span>01780146581, 01637674086</span>
@@ -58,7 +61,12 @@ const Sidbar = () => {
             </div>
             <div className="row">
                 <div className="col-12 mt-3 py-3 text-center d-grid">
-                    <Button className='emailbtn' size="lg">Email Me</Button>
+                    <button onClick={handelEmailMe} className='emailbtn'>Email Me</button>
+                </div>
+            </div>
+            <div className="row">
+                <div className="col-12  text-center d-grid">
+                     <button className='emailbtn'>Dark UI</button>
                 </div>
             </div>
         </div>
