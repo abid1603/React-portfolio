@@ -10,7 +10,7 @@ import CV from '../CV/nobel.png';
 
 const Sidbar = () => {
     const handelEmailMe = () =>{
-        Window.open("mailto:abidkhan1603@gmail.com");
+        window.open("mailto:abidkhan1603@gmail.com");
     }
     return (
         <div className="sidbar p-4">

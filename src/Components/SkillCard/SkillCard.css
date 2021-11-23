@@ -1,0 +1,21 @@
+.skill_card{
+    background-color: white;
+    border-radius: 10px;
+    height: 18vh;
+    overflow-x: auto;
+}
+.skill_card:hover{
+    transition: .5s;
+    transform: scale(1.02);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+.skill_card_icon{
+    font-size: 30px;
+    margin-right: 5px;
+}
+.skill_card_title{
+    font-size: 30px;
+}
+.skill_card_body{
+    font-size: 20px;
+}

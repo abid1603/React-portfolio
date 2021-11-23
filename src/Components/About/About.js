@@ -36,11 +36,11 @@ const About = () => {
                 Also i have some Achievement on Problem Solving.I enjoy taking complex and beautiful Interface designs.
             </p>
             </div>
-            <div className="container about_container my-2">
-                <h4 className='about_heading'>What I offer</h4>
+            <div className="container about_container">
+                <h4 className='about_heading py-3'>What I offer</h4>
                 <div className="row">
                     {
-                        skills.map( skill => <SkillCard skill={skill}></SkillCard>)
+                        skills.map( skill => <SkillCard  skill={skill}></SkillCard>)
                     }
                 </div>
             </div>

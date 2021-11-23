@@ -8,15 +8,16 @@ const Portfolio = () => {
     return (
         <div className="container pt-5">
             <div className="row">
-                <div className="col-sm-12 col-md-4 col-lg-3 mb-3">
+                <div className="col-lg-3 col-md-4 mb-1 pt-1">
                     <div className="sidebar bg-white rounded">
-                        <Sidbar></Sidbar>
+                        <Sidbar />
                     </div>
                 </div>
-                <div className="col-sm-12 col-md-8 col-lg-9">
+                <div className="col-lg-9 col-md-8 mt-1 pb-1">
                     <div className="mainbar bg-white rounded">
-                    <Mainbar></Mainbar>
-                    </div>
+                        <Mainbar />
+                        </div>
+                    
                 </div>
             </div>
         </div>

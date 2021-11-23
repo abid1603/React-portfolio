@@ -1,0 +1,21 @@
+.resume_card_heading{
+    font-weight: 700;
+    color: indigo;
+}
+.resume_card_title{
+    font-weight: 600;
+}
+.resume_card_body{
+    color: indigo;
+}
+.info{
+    font-size: 18px;
+    font-weight: 400;
+}
+.backbar{
+    background-color: rgb(106, 57, 141);
+    border-radius: 20px;
+}
+.fontbar{
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+}
