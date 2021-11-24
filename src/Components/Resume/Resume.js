@@ -1,67 +1,55 @@
 import React from 'react';
 import './Resume.css';
-import python from '../Icons/LanguageIcon/python-brands.svg';
-import react from '../Icons/LanguageIcon/react-brands.svg';
-import bootstrap from '../Icons/LanguageIcon/bootstrap-brands.svg';
-import C from '../Icons/LanguageIcon/c-solid.svg';
-import java from '../Icons/LanguageIcon/java-brands.svg';
-import nodjs from '../Icons/LanguageIcon/node-js-brands.svg';
-import material from '../Icons/LanguageIcon/m-solid.svg';
-import html from '../Icons/LanguageIcon/html5-brands.svg';
-import javascript from '../Icons/LanguageIcon/js-square-brands.svg';
+import {faReact,faJava,faPython,faJsSquare,faCuttlefish,faNodeJs
+,faHtml5,faBootstrap,faUikit,faGit,faFigma,faMicrosoft,faAndroid} from '@fortawesome/free-brands-svg-icons';
+import {faPencilAlt,faCamera,faDatabase} from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import git from '../Icons/ToolsIcon/git-brands.svg';
-import figma from '../Icons/ToolsIcon/figma-brands.svg';
-import illastetor from '../Icons/ToolsIcon/pen-ruler-solid.svg';
-import photshop from '../Icons/ToolsIcon/camera-solid.svg';
-import mongodb from '../Icons/ToolsIcon/database-solid.svg';
-import microsoft from '../Icons/ToolsIcon/microsoft-brands.svg';
-import android from '../Icons/ToolsIcon/android-brands.svg'; 
 
 
 const languages =[
     {
-        icon: {react},
+        icon: faReact,
         name: 'React',
         level: "80"
     },
     {
-        icon: {java},
+        icon: faJava,
         name: 'Java',
         level: "50"
     },
     {
-        icon: {python},
+        icon: faPython,
         name: 'Python',
         level: "40"
     },
     {
-        icon: {javascript},
+        icon: faJsSquare,
         name: 'JavaScript',
         level: "77"
     },
     {
-        icon: {C},
+        icon: faCuttlefish,
         name: 'C Programme',
         level: "70"
     },
     {
-        icon: {nodjs},
+        icon: faNodeJs,
         name: 'Node JS',
         level: "55"
     },
     {
-        icon: {html},
+        icon: faHtml5,
         name: 'HTML & CSS',
         level: "88"
     },
     {
-        icon: {bootstrap},
+        icon: faBootstrap,
         name: 'BootStrap',
         level: "90"
     },
     {
-        icon: {material},
+        icon: faUikit,
         name: 'Material UI',
         level: "65"
     },
@@ -69,37 +57,37 @@ const languages =[
 
 const tools =[
     {
-        icon: {git},
+        icon: faGit,
         name: 'Git',
         level: "60"
     },
     {
-        icon: {figma},
+        icon: faFigma,
         name: 'Figma',
         level: "80"
     },
     {
-        icon: {illastetor},
+        icon: faPencilAlt,
         name: 'Illustrator',
         level: "95"
     },
     {
-        icon: {photshop},
+        icon: faCamera,
         name: 'PhotoShop',
         level: "60"
     },
     {
-        icon: {mongodb},
+        icon: faDatabase,
         name: 'Mongo DB',
         level: "55"
     },
     {
-        icon: {microsoft},
+        icon: faMicrosoft,
         name: 'Microsoft Office',
         level: "95"
     },
     {
-        icon: {android},
+        icon: faAndroid,
         name: 'Android Studio',
         level: "55"
     }
@@ -137,16 +125,19 @@ const Resume = () => {
             </div>
             <div className="row">
                 <div className="col-lg-6 resume_languages">
-                    <h4 className='resume_card_heading'>Language & Framework</h4>
+                    <h4 className='resume_card_heading mb-4'>Language & Framework</h4>
                     <div className="resume_language-body">
                     {
                           languages.map(language=> 
-                             <div className="backbar p-1 my-2">
-                                 <div className="fontbar d-flex"
-                                 style={{'width':language.level}}
+                             <div className="backbar my-3">
+                                 <div className="fontbar p-1"
+                                 style={{'width':`${language.level}%`}}
                                  >
-                                       <img src={language.icon} alt="icon" />
-                                       <h6>{language.name}</h6>
+                                    <div className="d-flex  align-items-center justify-content-start">
+                                        <FontAwesomeIcon className='language_icon px-2' icon={language.icon}></FontAwesomeIcon>
+                                        <span className='language_name'>{language.name}</span>
+                                        <span className='level'>{language.level}%</span>
+                                    </div>
                                  </div>
                              </div>
                             )  
@@ -157,7 +148,19 @@ const Resume = () => {
                     <h4 className='resume_card_heading'>Tools & Framework</h4>
                     <div className="resume_tools-body">
                     {
-                        
+                          tools.map(language=> 
+                             <div className="backbar my-3">
+                                 <div className="fontbar p-1"
+                                 style={{'width':`${language.level}%`}}
+                                 >
+                                    <div className="d-flex  align-items-center justify-content-start">
+                                        <FontAwesomeIcon className='language_icon px-2' icon={language.icon}></FontAwesomeIcon>
+                                        <span className='language_name'>{language.name}</span>
+                                        <span className='level'>{language.level}%</span>
+                                    </div>
+                                 </div>
+                             </div>
+                            )  
                     }
                 </div>
                 </div>

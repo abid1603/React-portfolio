@@ -7,3 +7,9 @@ body{
   background: linear-gradient(to right, #74ebd5, #acb6e5);
   background-attachment: fixed;
 }
+
+@media only screen and (max-width: 766px) {
+  mainbar{
+    height: 100vh;
+  }
+}

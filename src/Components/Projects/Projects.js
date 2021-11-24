@@ -3,8 +3,12 @@ import './Projects.css';
 
 const Projects = () => {
     return (
-        <div>
-            <h1>This is Projects</h1>
+        <div className="container projects">
+            <div className="row">
+                {
+                    
+                }
+            </div>
         </div>
     );
 };
