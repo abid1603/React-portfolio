@@ -1,0 +1,9 @@
+.projects{
+    height: 90vh;
+    
+}
+.navitem{
+    padding: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}

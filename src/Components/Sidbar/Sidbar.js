@@ -40,9 +40,9 @@ const Sidbar = () => {
             </div>
             <div className="row icons my-2">
                 <div className="col-12  text-center d-flex justify-content-around p-1">
-                    <a href=""><img className='socialicon' src={github} alt="github icon" /></a>
-                    <a href="https://www.facebook.com/Abidur22"><img className='socialicon' src={facebook} alt="github icon" /></a>
-                    <a href=""><img className='socialicon' src={linkdin} alt="github icon" /></a>
+                    <a href="https://github.com/abid1603" target='_blank'><img className='socialicon' src={github} alt="github icon" /></a>
+                    <a href="https://www.facebook.com/Abidur22" target='_blank'><img className='socialicon' src={facebook} alt="github icon" /></a>
+                    <a href="https://www.linkedin.com/in/abidur-rahman-abid-657524226" target='_blank'><img className='socialicon' src={linkdin} alt="github icon" /></a>
 
                 </div>
             </div>

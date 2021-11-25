@@ -7,6 +7,7 @@ import lyrics from '../Photos/projects_photos/Screenshot (102).png';
 import weather from '../Photos/projects_photos/Screenshot (103).png';
 import pin from '../Photos/projects_photos/Screenshot (104).png';
 import keybord from '../Photos/projects_photos/Screenshot (105).png';
+import animation from '../Photos/projects_photos/Screenshot (106).png';
 
 const data_projects=[
     {
@@ -14,14 +15,14 @@ const data_projects=[
         image: panda,
         deployed_url:'https://abid1603.github.io/E-comerse/' ,
         github_url:'https://github.com/abid1603/E-comerse' ,
-        category: ['bootstrap']
+        category: ['Bootstrap']
     },
     {
         name:'CSS Portfolio',
         image: firstportfolio,
         deployed_url:'https://abid1603.github.io/First_portfolio/' ,
         github_url:'https://github.com/abid1603/First_portfolio' ,
-        category: ['bootstrap']
+        category: ['Bootstrap']
     },
     {
         name:'Abid Bank',
@@ -71,6 +72,13 @@ const data_projects=[
         deployed_url:'https://abid1603.github.io/VirtualKeybord/' ,
         github_url:'https://github.com/abid1603/VirtualKeybord' ,
         category: ['Javascript']
+    },
+    {
+        name:'Simple_animation',
+        image: animation,
+        deployed_url:'https://abid1603.github.io/Simple-animation/' ,
+        github_url:'https://github.com/abid1603/Simple-animation' ,
+        category: ['Bootstrap']
     }
 
 ]
